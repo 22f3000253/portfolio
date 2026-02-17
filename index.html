@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aravind S - Robotics & AI Portfolio</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+:root{--primary:#2a265f;--secondary:#0077b6;--accent:#4361ee;--light:#f8f9fa;--dark:#212529;--success:#4bb543;--text:#333;--light-bg:#f5f7f9}*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}body{color:var(--text);background:var(--light-bg);line-height:1.6}a{text-decoration:none;color:var(--accent);transition:all .3s ease}a:hover{color:var(--secondary)}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:100px 0 50px;clip-path:polygon(0 0,100% 0,100% 85%,0 100%);margin-bottom:40px}.header-content{display:flex;justify-content:space-between;align-items:center}.profile-info{flex:2}.profile-image{flex:1;text-align:right;margin-left:30px}.profile-image img{max-width:200px;border-radius:10px;border:5px solid rgba(255,255,255,.3);box-shadow:0 10px 20px rgba(0,0,0,.2)}h1{font-size:3rem;margin-bottom:10px;font-weight:700}.tagline{font-size:1.5rem;margin-bottom:20px;opacity:.9}.social-links{display:flex;gap:15px;margin-top:20px}.social-links a{color:white;font-size:1.3rem;transition:transform .3s ease}.social-links a:hover{transform:translateY(-5px)}nav{background-color:white;padding:20px 0;box-shadow:0 5px 20px rgba(0,0,0,.1);position:sticky;top:0;z-index:100}.nav-container{display:flex;justify-content:space-between;align-items:center}.logo{font-weight:700;font-size:1.5rem;color:var(--primary);margin-right:20px}.nav-links-container{flex:1;display:flex;overflow-x:auto;padding-bottom:5px}.nav-links-container::-webkit-scrollbar{display:none}.nav-links-container{-ms-overflow-style:none;scrollbar-width:none}.nav-links{display:flex;list-style:none;gap:12px;margin:0;padding:0;width:100%;justify-content:space-between;flex-wrap:nowrap}.nav-links li{flex:0 0 auto}.nav-links a{color:var(--dark);font-weight:600;padding:8px 8px;border-radius:4px;transition:all .3s ease;white-space:nowrap;font-size:.9rem}.nav-links a:hover,.nav-links a.active{background-color:var(--primary);color:white}.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--primary)}section{padding:60px 0}.section-title{text-align:center;margin-bottom:50px;position:relative}.section-title h2{font-size:2.5rem;display:inline-block;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.section-title::after{content:'';position:absolute;width:80px;height:4px;background:linear-gradient(135deg,var(--primary),var(--secondary));left:50%;transform:translateX(-50%);bottom:-10px;border-radius:2px}.about-content{display:flex;gap:30px;align-items:center}.about-text{flex:2}.about-stats{flex:1}.stat-box{background-color:white;padding:20px;border-radius:10px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,.05);margin-bottom:20px;transition:transform .3s ease}.stat-box:hover{transform:translateY(-5px)}.stat-number{font-size:2.5rem;font-weight:700;color:var(--accent);margin-bottom:5px}.soft-skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:25px}.soft-skill-item{background-color:white;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);text-align:center;transition:transform .3s ease}.soft-skill-item:hover{transform:translateY(-5px)}.soft-skill-icon{width:60px;height:60px;margin:0 auto 15px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.5rem}.soft-skill-item h3{margin-bottom:10px;color:var(--primary);font-size:1.1rem}.skill-item{margin-bottom:15px}.skill-name{display:flex;justify-content:space-between;margin-bottom:5px}.skill-name span{font-weight:600}.skill-level{color:var(--secondary);font-size:.9rem}.progress-bar{height:8px;background-color:var(--light-bg);border-radius:4px;overflow:hidden}.progress{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:4px}.projects-list{max-width:900px;margin:0 auto}.project-item{background:white;padding:20px 25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);margin-bottom:15px;transition:transform .3s ease;display:flex;align-items:center;gap:20px}.project-item:hover{transform:translateY(-5px)}.project-icon{width:50px;height:50px;min-width:50px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.3rem}.project-info{flex:1}.project-title{font-size:1.1rem;margin-bottom:3px;color:var(--primary);font-weight:600}.project-date{color:var(--secondary);font-size:.85rem;font-weight:600}.research-container{display:flex;flex-direction:column;gap:25px}.research-item{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);transition:transform .3s ease}.research-item:hover{transform:translateY(-5px)}.research-title{font-size:1.2rem;margin-bottom:10px;color:var(--primary)}.research-meta{display:flex;gap:15px;margin-bottom:12px;font-size:.85rem;color:var(--secondary);flex-wrap:wrap}.research-meta span{display:flex;align-items:center;gap:5px}.publication-badge{display:inline-block;background-color:var(--success);color:white;padding:4px 10px;border-radius:4px;font-size:.8rem;font-weight:600;margin-top:8px}.timeline{position:relative;max-width:800px;margin:0 auto}.timeline::after{content:'';position:absolute;width:4px;background-color:var(--light-bg);top:0;bottom:0;left:50%;transform:translateX(-50%)}.timeline-item{padding:20px 30px;position:relative;width:calc(50% - 40px);margin-bottom:40px}.timeline-item:nth-child(odd){left:0}.timeline-item:nth-child(even){left:50%}.timeline-item::after{content:'';position:absolute;width:20px;height:20px;background-color:white;border:4px solid var(--primary);top:20px;border-radius:50%;z-index:1}.timeline-item:nth-child(odd)::after{right:-50px}.timeline-item:nth-child(even)::after{left:-50px}.timeline-content{padding:20px;background-color:white;position:relative;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05)}.timeline-content::after{content:'';position:absolute;border-width:10px;border-style:solid;top:20px}.timeline-item:nth-child(odd) .timeline-content::after{border-color:transparent transparent transparent white;right:-20px}.timeline-item:nth-child(even) .timeline-content::after{border-color:transparent white transparent transparent;left:-20px}.timeline-date{background-color:var(--accent);color:white;padding:5px 10px;border-radius:4px;font-size:.8rem;font-weight:600;display:inline-block;margin-bottom:10px}.timeline-title{font-size:1.15rem;margin-bottom:10px;color:var(--primary)}.certifications-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:1000px;margin:0 auto}.certification-card{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);transition:transform .3s ease}.certification-card:hover{transform:translateY(-5px)}.certification-card h3{color:var(--primary);font-size:1.05rem;margin-bottom:8px}.certification-date{color:var(--secondary);font-size:.85rem;font-weight:600}.languages-container{max-width:700px;margin:0 auto}.language-item{margin-bottom:25px}.language-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.language-info h3{font-size:1.2rem;margin:0;color:var(--primary)}.language-info span{color:var(--accent);font-weight:600;font-size:.9rem}.languages-container .progress-bar{height:10px}.languages-container .progress{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:5px}.contact-flex{display:flex;gap:40px}.contact-info{flex:1}.contact-form{flex:2}.contact-item{display:flex;align-items:center;gap:15px;margin-bottom:20px}.contact-icon{width:45px;height:45px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.1rem}.contact-detail{font-weight:600;font-size:.95rem}.form-group{margin-bottom:20px}.form-group label{display:block;margin-bottom:8px;font-weight:600}.form-control{width:100%;padding:12px 15px;border:2px solid var(--light-bg);border-radius:4px;font-size:1rem;transition:border-color .3s ease}.form-control:focus{outline:none;border-color:var(--accent)}textarea.form-control{min-height:130px;resize:vertical}.btn{display:inline-block;padding:12px 30px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;border:none;border-radius:4px;font-size:1rem;font-weight:600;cursor:pointer;transition:all .3s ease}.btn:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.1)}footer{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:30px 0 15px;text-align:center;margin-top:60px}.footer-bottom{padding-top:15px;border-top:1px solid rgba(255,255,255,.1)}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.animate{opacity:0;animation:fadeIn .8s forwards}.delay-1{animation-delay:.2s}.delay-2{animation-delay:.4s}@media (max-width:992px){.header-content,.about-content,.contact-flex{flex-direction:column}.profile-image{margin:0 0 30px;text-align:center}.social-links{justify-content:center}.nav-links{flex-wrap:wrap;justify-content:center}}@media (max-width:768px){h1{font-size:2.2rem}.tagline{font-size:1.2rem}.section-title h2{font-size:2rem}.nav-links-container{display:none;position:absolute;top:100%;left:0;right:0;background-color:white;padding:20px;box-shadow:0 5px 20px rgba(0,0,0,.1)}.nav-links-container.show{display:block}.nav-links{flex-direction:column;gap:10px}.nav-links li{width:100%}.nav-links a{display:block;text-align:left}.mobile-menu-btn{display:block}.project-item{flex-direction:column;text-align:center}.timeline::after{left:30px}.timeline-item{width:100%;padding-left:70px;padding-right:0}.timeline-item:nth-child(even){left:0}.timeline-item::after{left:20px}.timeline-item:nth-child(odd) .timeline-content::after,.timeline-item:nth-child(even) .timeline-content::after{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="container header-content">
+<div class="profile-info animate">
+<h1>ARAVIND S</h1>
+<p class="tagline">Robotics & AI Specialist</p>
+<p>Expertise in generative AI, machine learning, path planning, and multi-robot coordination. Passionate about applying AI concepts to robotics for innovative, real-world applications.</p>
+<div class="social-links">
+<!--email_off-->22f3000253@ds.study.iitm.ac.in<!--/email_off-->
+<a href="https://www.linkedin.com/in/aravind-sathishkumar-04383a24b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:aravindsathishkumar2004@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="tel:+917010684404"><i class="fas fa-phone"></i></a>
+</div>
+</div>
+<div class="profile-image animate delay-1">
+<img src="aravindbg.png" alt="Aravind S">
+</div>
+</div>
+</header>
+
+<nav>
+<div class="container nav-container">
+<a href="#" class="logo">A.S</a>
+<button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+<div class="nav-links-container">
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#internships">Internships</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section id="about">
+<div class="container">
+<div class="section-title animate"><h2>Professional Summary</h2></div>
+<div class="about-content">
+<div class="about-text animate">
+<p>Robotics and AI specialist with expertise in generative AI, machine learning, path planning, and multi-robot coordination. Skilled in developing intelligent robotic systems and integrating AI-driven decision-making.</p>
+<p>Passionate about applying AI concepts to robotics and game development for innovative, real-world applications. Seeking opportunities in a company that fosters AI-driven robotics and interactive systems.</p>
+</div>
+<div class="about-stats animate delay-1">
+<div class="stat-box"><div class="stat-number">7</div><div class="stat-title">Projects</div></div>
+<div class="stat-box"><div class="stat-number">3</div><div class="stat-title">Research Papers</div></div>
+<div class="stat-box"><div class="stat-number">8.61</div><div class="stat-title">CGPA</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="education" style="background-color:white;">
+<div class="container">
+<div class="section-title animate"><h2>Educational Qualification</h2></div>
+<div class="timeline">
+<div class="timeline-item animate">
+<div class="timeline-content">
+<span class="timeline-date">Pass Out by June 2026</span>
+<h3 class="timeline-title">B.Tech Robotics and Artificial Intelligence</h3>
+<p><strong>SASTRA Deemed University</strong> | Thanjavur</p>
+<p>CGPA: 8.6131 (at the end of 6th semester)</p>
+</div>
+</div>
+<div class="timeline-item animate delay-1">
+<div class="timeline-content">
+<span class="timeline-date">June 2022</span>
+<h3 class="timeline-title">Grade 12 - CBSE</h3>
+<p><strong>Jain Public School</strong>, Thirumudivakkam | Chennai</p>
+<p>Percentage: 94%</p>
+</div>
+</div>
+<div class="timeline-item animate delay-2">
+<div class="timeline-content">
+<span class="timeline-date">June 2020</span>
+<h3 class="timeline-title">Grade 10 - CBSE</h3>
+<p><strong>Jain Public School</strong>, Thirumudivakkam | Chennai</p>
+<p>Percentage: 95.2%</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="section-title animate"><h2>Technical Skills</h2></div>
+<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);margin-bottom:30px;">
+<h3 style="color:var(--primary);margin-bottom:20px;">Programming Languages</h3>
+<div class="skill-item"><div class="skill-name"><span>Python</span><span class="skill-level">Proficient</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+<div class="skill-item"><div class="skill-name"><span>C / C++</span><span class="skill-level">Basic</span></div><div class="progress-bar"><div class="progress" style="width:40%"></div></div></div>
+<div class="skill-item"><div class="skill-name"><span>HTML / LaTeX</span><span class="skill-level">Basic</span></div><div class="progress-bar"><div class="progress" style="width:40%"></div></div></div>
+</div>
+<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);margin-bottom:30px;">
+<h3 style="color:var(--primary);margin-bottom:20px;">Applications & Tools</h3>
+<div class="skill-item"><div class="skill-name"><span>Visual Studio Code</span><span class="skill-level">Proficient</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+<div class="skill-item"><div class="skill-name"><span>Canva</span><span class="skill-level">Proficient</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+<div class="skill-item"><div class="skill-name"><span>MATLAB</span><span class="skill-level">Limited Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:60%"></div></div></div>
+<div class="skill-item"><div class="skill-name"><span>CoppeliaSim</span><span class="skill-level">Basic</span></div><div class="progress-bar"><div class="progress" style="width:40%"></div></div></div>
+</div>
+<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);margin-bottom:30px;">
+<h3 style="color:var(--primary);margin-bottom:20px;">Areas of Interest</h3>
+<div class="skill-item"><div class="skill-name"><span>ROS2</span></div></div>
+<div class="skill-item"><div class="skill-name"><span>PLC Programming</span></div></div>
+</div>
+<div class="section-title animate" style="margin-top:50px;"><h2>Soft Skills</h2></div>
+<div class="soft-skills-grid animate">
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-comments"></i></div><h3>Communication</h3><p>Good communication skills for effective collaboration</p></div>
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-users"></i></div><h3>Team Player</h3><p>Collaborative approach with shared goals</p></div>
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-sync-alt"></i></div><h3>Adaptive</h3><p>Quickly adjust to new situations</p></div>
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-clock"></i></div><h3>Time Management</h3><p>Strong ability to meet deadlines</p></div>
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div><h3>Proactive</h3><p>Taking initiative to solve problems</p></div>
+<div class="soft-skill-item"><div class="soft-skill-icon"><i class="fas fa-handshake"></i></div><h3>Negotiation</h3><p>Strong negotiation skills</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects" style="background-color:white;">
+<div class="container">
+<div class="section-title animate"><h2>Projects</h2></div>
+<div class="projects-list">
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-robot"></i></div><div class="project-info"><div class="project-title">Conversational AI based Robot Vacuum Cleaner</div><div class="project-date">Ongoing</div></div></div>
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-fire-extinguisher"></i></div><div class="project-info"><div class="project-title">Autonomous Firefighting Robot for Forest Fires and Urban Fire Calamities</div><div class="project-date">May 2025</div></div></div>
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-map-marked-alt"></i></div><div class="project-info"><div class="project-title">Performance Analysis of SLAM-Based vs. Reactive-Based Mobile Robot Navigation in an Unknown Environment</div><div class="project-date">May 2025</div></div></div>
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-gamepad"></i></div><div class="project-info"><div class="project-title">Movie Mayhem - An Action Saga (Viterbi Algorithm based Story Driven Action Game)</div><div class="project-date">December 2024</div></div></div>
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-search-location"></i></div><div class="project-info"><div class="project-title">Optimized Multi-Robot Search and Rescue in Disaster-Stricken Environment Using a Time-Efficient Hybrid A-Dijkstra Algorithm</div><div class="project-date">December 2024</div></div></div>
+<div class="project-item animate"><div class="project-icon"><i class="fas fa-dice-five"></i></div><div class="project-info"><div class="project-title">Bingo - User vs AI game (with varying levels of difficulty)</div><div class="project-date">May 2024</div></div></div>
+</div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+<div class="section-title animate"><h2>Research Work</h2></div>
+<div class="research-container">
+<div class="research-item animate">
+<h3 class="research-title">Performance Analysis of SLAM based vs Reactive based navigation approach in an unknown environment</h3>
+<div class="research-meta">
+<span><i class="fas fa-user"></i> Dr. P. Arunkumar, Assistant Professor-III, SASTRA University</span>
+<span><i class="fas fa-calendar-alt"></i> May 2025</span>
+</div>
+<p>Conducted research and led the simulation component for reactive navigation using ROS2 Humble. Comparative analysis of SLAM versus reactive navigation approaches.</p>
+<span class="publication-badge">Under Publication</span>
+</div>
+<div class="research-item animate delay-1">
+<h3 class="research-title">Implementation of Leader-Follower approach with PID Control using Turtlebot3</h3>
+<div class="research-meta">
+<span><i class="fas fa-user"></i> Dr. P. Arun Kumar, Assistant Professor-III, SASTRA University</span>
+<span><i class="fas fa-calendar-alt"></i> Ongoing</span>
+</div>
+<p>Leading the simulation component of the research using ROS2 Humble. Implementing and evaluating a leader-follower control approach for multi-robot coordination.</p>
+</div>
+<div class="research-item animate delay-2">
+<h3 class="research-title">Machine Learning assisted Lens optimisation for IR ray collimation of mini tubes</h3>
+<div class="research-meta">
+<span><i class="fas fa-user"></i> Dr. M. Venkatesan, Professor, School of Mechanical Engineering, SASTRA University</span>
+<span><i class="fas fa-calendar-alt"></i> Ongoing</span>
+</div>
+<p>Leading the machine learning component of the research. Utilizing XG Boost Regression for lens optimization to improve infrared ray collimation efficiency.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="internships" style="background-color:white;">
+<div class="container">
+<div class="section-title animate"><h2>Internships & Hackathons</h2></div>
+<div class="timeline">
+<div class="timeline-item animate">
+<div class="timeline-content">
+<span class="timeline-date">June 2025</span>
+<h3 class="timeline-title">Summer Internship - Sansera Engineering Ltd.</h3>
+<p>Gained industry experience in engineering and manufacturing processes.</p>
+</div>
+</div>
+<div class="timeline-item animate delay-1">
+<div class="timeline-content">
+<span class="timeline-date">June-July 2024</span>
+<h3 class="timeline-title">Summer Internship - NIT Trichy</h3>
+<p>Completed a one-month summer internship at the National Institute of Technology, Trichy. Worked on advanced flood mitigation systems.</p>
+</div>
+</div>
+<div class="timeline-item animate delay-2">
+<div class="timeline-content">
+<span class="timeline-date">March 2025</span>
+<h3 class="timeline-title">Daksh 2025 AI Hackathon - Finalist</h3>
+<p>Theme: AI for Smart Cities. Reached finalist stage developing innovative solutions for urban challenges using AI and machine learning.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="container">
+<div class="section-title animate"><h2>Certifications</h2></div>
+<div class="certifications-grid">
+<div class="certification-card animate"><h3>MathWorks Image Processing Onramp</h3><p class="certification-date">June 2025</p></div>
+<div class="certification-card animate"><h3>MathWorks Object Detection With Deep Learning Onramp</h3><p class="certification-date">June 2025</p></div>
+<div class="certification-card animate"><h3>MathWorks Deep Learning Onramp</h3><p class="certification-date">June 2025</p></div>
+<div class="certification-card animate"><h3>MathWorks Machine Learning Onramp</h3><p class="certification-date">June 2025</p></div>
+<div class="certification-card animate"><h3>MathWorks MATLAB Onramp</h3><p class="certification-date">August 2023</p></div>
+<div class="certification-card animate"><h3>IITM Madras BS Degree in Data Science and Applications - Foundation Level Certificate</h3><p class="certification-date">September 2022 - May 2024</p></div>
+</div>
+</div>
+</section>
+
+<section id="languages" style="background-color:white;">
+<div class="container">
+<div class="section-title animate"><h2>Languages Known</h2></div>
+<div class="languages-container animate">
+<div class="language-item"><div class="language-info"><h3>Tamil</h3><span>Native Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:100%"></div></div></div>
+<div class="language-item"><div class="language-info"><h3>English</h3><span>Professional Working Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+<div class="language-item"><div class="language-info"><h3>German</h3><span>Elementary Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:30%"></div></div></div>
+<div class="language-item"><div class="language-info"><h3>Japanese</h3><span>Elementary Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:30%"></div></div></div>
+<div class="language-item"><div class="language-info"><h3>Hindi</h3><span>Elementary Proficiency</span></div><div class="progress-bar"><div class="progress" style="width:30%"></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title animate"><h2>Contact Me</h2></div>
+<div style="max-width:800px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;">
+<div class="contact-item animate" style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;text-align:center;">
+<div class="contact-icon" style="margin-bottom:15px;"><i class="fas fa-envelope"></i></div>
+<h3 style="color:var(--primary);margin-bottom:10px;">Email</h3>
+<p class="contact-detail"><a href="mailto:aravindsathishkumar2004@gmail.com">aravindsathishkumar2004@gmail.com</a></p>
+</div>
+<div class="contact-item animate delay-1" style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;text-align:center;">
+<div class="contact-icon" style="margin-bottom:15px;"><i class="fas fa-phone"></i></div>
+<h3 style="color:var(--primary);margin-bottom:10px;">Phone</h3>
+<p class="contact-detail"><a href="tel:+917010684404">+91 7010684404</a></p>
+</div>
+<div class="contact-item animate delay-2" style="background:white;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;text-align:center;">
+<div class="contact-icon" style="margin-bottom:15px;"><i class="fab fa-linkedin"></i></div>
+<h3 style="color:var(--primary);margin-bottom:10px;">LinkedIn</h3>
+<p class="contact-detail"><a href="https://www.linkedin.com/in/aravind-sathishkumar-04383a24b/" target="_blank">View Profile</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-bottom">
+<p>&copy; 2025 Aravind S. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+document.querySelector('.mobile-menu-btn').addEventListener('click',function(){document.querySelector('.nav-links-container').classList.toggle('show')});document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})})});const animateElements=document.querySelectorAll('.animate');const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.style.opacity='1'}})},{threshold:0.1});animateElements.forEach(element=>{observer.observe(element)});
+</script>
+</body>
+</html>
